@@ -663,7 +663,7 @@ button.share-btn svg {
 
 .dropdown:after {
     content: '';
-    background-image: url(./images/dropdown.png);
+    background-image: url(./images/dropdown.webp);
     background-repeat: no-repeat;
     background-size: contain;
     width: 12px;
