@@ -207,11 +207,16 @@ img {
     cursor: pointer;
     border: 0;
     z-index: 1;
-    border-radius: 0;
+    border-radius: 10px;
     font-size: 18px;
     letter-spacing: 1px;
     margin-top: 15px;
-    padding: 10px 45px
+    padding: 10px 45px;
+    transition: .5s;
+}
+
+.btn:hover {
+    background-color: var(--primary-color);
 }
 
 .btn:hover:after,
@@ -220,12 +225,12 @@ img {
     width: 100%
 }
 
-.btn:after {
+/* .btn:after {
     width: 3%;
     height: 100%;
     z-index: -1;
     top: 0
-}
+} */
 
 .text-link {
     transition: .5s;
@@ -237,16 +242,17 @@ img {
 
 .text-link:hover {
     color: var(--primary-font);
-    padding-left: 25px
+    padding-left: 10px;
+
 }
 
-.text-link:after {
+/* .text-link:after {
     width: 0;
     height: 3px;
     border-radius: 10px;
     display: block;
     top: 50%
-}
+} */
 
 .footer-links .navbar-nav .nav-item .nav-link:hover:after,
 .text-link:hover:after {
@@ -551,7 +557,6 @@ button.share-btn svg {
     background-color: var(--white);
     height: 30px;
     display: block;
-    /* transition: .5s */
 }
 
 .control .next,
@@ -577,8 +582,25 @@ button.share-btn svg {
 .navbar-nav .nav-item .nav-link:hover,
 .top-contact a:hover {
     color: var(--second-color);
-
 }
+
+.nav-link:hover {
+
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.nav-link:after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    display: block;
+    bottom: 0;
+    position: absolute;
+    left: 0;
+    transition: .5s;
+}
+
+
 
 .newsletter .form-row,
 .top-header .social-media ul {
@@ -587,7 +609,6 @@ button.share-btn svg {
 }
 
 .top-header .social-media ul li a:hover {
-    transform: rotate(360deg);
     background-color: var(--second-color)
 }
 
@@ -852,7 +873,8 @@ button.share-btn svg {
     box-shadow: 0 0 15px rgba(0, 0, 0, .1);
     display: flex;
     flex-direction: column;
-    justify-content: space-between
+    justify-content: space-between;
+    border-radius: 10px;
 }
 
 .serivces-content .title {
@@ -871,7 +893,8 @@ button.share-btn svg {
 
 .serivces-images img {
     object-fit: contain;
-    max-height: 250px
+    max-height: 250px;
+    border-radius: 10px;
 }
 
 .newsletter {
@@ -906,7 +929,7 @@ button.share-btn svg {
     outline: 0;
     color: var(--white);
     width: 61%;
-    border-radius: 0
+    border-radius: 10px
 }
 
 .newsletter .form-row .form-control::placeholder {
@@ -923,7 +946,8 @@ button.share-btn svg {
     border: none;
     outline: 0;
     width: 200px;
-    height: 56px
+    height: 56px;
+    border-radius: 10px;
 }
 
 .newsletter button.subcribe:hover {
@@ -984,7 +1008,7 @@ button.share-btn svg {
     bottom: 0;
     position: absolute;
     left: 0;
-    transition: .5s
+    transition: .5s;
 }
 
 .updates .btn {
@@ -999,7 +1023,8 @@ button.share-btn svg {
     aspect-ratio: 1.1;
     max-width: 373px;
     max-height: 373px;
-    object-fit: cover
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 .logo-slider-inner {
@@ -1106,7 +1131,7 @@ button.share-btn svg {
     color: #000
 }
 
-.footer-links .navbar-nav .nav-item .nav-link:after {
+/* .footer-links .navbar-nav .nav-item .nav-link:after {
     width: 0;
     height: 3px;
     border-radius: 10px;
@@ -1117,10 +1142,10 @@ button.share-btn svg {
     transition: .5s;
     left: 0;
     content: ''
-}
+} */
 
 .footer-links .navbar-nav .nav-item .nav-link:hover {
-    padding-left: 25px;
+    /* padding-left: 25px; */
     color: var(--second-color)
 }
 
@@ -1180,7 +1205,8 @@ button.share-btn svg {
 }
 
 .goog-te-gadget-simple {
-    padding: 10px !important
+    padding: 10px !important;
+    border-radius: 10px;
 }
 
 .goog-te-gadget-simple span {
